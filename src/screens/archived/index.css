@@ -1,0 +1,28 @@
+.archivedScreen {
+    padding: 20px 40px;
+}
+.archivedScreen .archivedscreen__title {
+    display: flex;
+    align-items: center;
+}
+
+.archivedScreen .archivedscreen__title img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px){
+    .archivedScreen {
+        padding: 10px 20px;
+    }
+    .archivedScreen .archivedscreen__title {
+        margin-bottom: 10px;
+    }
+    .archivedScreen .archivedscreen__title img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    
+}

@@ -1,0 +1,260 @@
+.examScreen {
+    
+}
+
+.examScreen__explanatino {
+    padding: 20px 40px;
+}
+
+.examScreen__explanatino h2 {
+
+}
+
+.examScreen__explanatino ul {
+    list-style-image: url('../../assets/icons/circle.svg');
+    padding: 0;
+}
+
+.examScreen__explanatino ul li {
+    margin: 10px 0px;
+}
+
+.examScreen .BtnContainer {
+    text-align: center;
+}
+
+.examScreen .BtnContainer .startExamBtn {
+    min-width: 400px;
+    padding: 15px ;
+    text-align: center;
+    background-color: #F6B41B;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    transition: all 175ms ease-in;
+}
+
+.examScreen .BtnContainer .startExamBtn:hover {
+    background-color: #e9a300;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+    transform: translate(0px,-1px);
+}
+
+.examScreen .examItself {
+    margin-top: 30px;
+}
+
+.examScreen .examItself .examItself__content {
+    padding: 20px 40px;
+}
+
+.examScreen .examItself .examItself__content .timer {
+    margin-right: auto;
+    border: 2px dashed #0BE403;
+    width: fit-content;
+    padding: 10px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 600;
+}
+
+.examScreen .examItself .examItself__content .timer img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.examScreen .examItself .examItself__content .questions .comments__container .imageAnswer {
+    height: 200px;
+    max-width: 250px;
+    object-fit: cover;
+    /* border: 1px solid #a1a1a1; */
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    cursor: pointer;
+    transition: all .175s ease;
+}
+
+.examScreen .examItself .examItself__content .questions .comments__container .imageAnswer:hover {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+
+.examScreen .examItself .examItself__content .questions ul{
+    list-style-image: url('../../assets/icons/circle.svg');
+    font-size: 1.2rem;
+    /* margin: 0; */
+}
+
+.examScreen .examItself .examItself__content .questions .comments__container {
+    border: 1px solid #a1a1a1;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    margin: 20px;
+    width: auto;
+    min-height: 280px;
+}
+
+.examScreen .examItself .examItself__content .questions .questions__answersContainer {
+    position: relative;
+}
+
+.examScreen .examItself .examItself__content .questions .questions__answersContainer .subject__popComments {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;   */
+}
+
+.examScreen .examItself .examItself__content .questions .questions__answersContainer .subject__popComments .comments__arrows .rightArrow{
+    z-index: 60;    
+}
+
+.examScreen .examItself .examItself__content .questions .questions__answersContainer .subject__popComments .comments__arrows .leftArrow {
+    z-index: 60;
+}
+
+.examScreen .examItself .examItself__content .questions .uploadFile {
+    padding: 0px 47px;
+    position: relative;
+    cursor: auto;
+}
+
+.examScreen .examItself .examItself__content .questions .uploadFile label {
+    max-width: none;
+    border: 1px solid #a1a1a1;
+    min-height: 280px;
+}
+
+.examScreen .examItself .examItself__content .questions .uploadFile label * {
+    color: transparent;
+    fill: transparent;
+}
+
+.examScreen .examItself .examItself__content .questions .uploadFile > .addimage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.examScreen .finishExamBtn  {
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 150px;
+
+}
+
+.examScreen .finishExamBtn > button {
+    border: none;
+    outline: none;
+    background: #5983D8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    min-width: 300px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    transition: all 175ms ease-in;
+}
+
+.examScreen .finishExamBtn button:hover {
+    background-color: #2a65db;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+    transform: translate(0px,-1px);
+}
+
+.examScreen .finishExamBtn .examFinished {
+    background-color: #5983D8;
+    color: white;
+    padding: 10px 0px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.examScreen .examItself .lessonAnswers {
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+.examScreen .examItself .lessonAnswers .attachment {
+    margin: 0px auto;
+    max-width: 180px;
+    min-height: 138px;
+}
+
+
+@media (max-width: 768px) {
+    .examScreen__explanatino {
+        padding: 10px 20px;
+        padding-right: 30px;
+    }
+    .examScreen .examItself .examItself__content {
+        padding: 10px 20px;
+    }
+    .examScreen .examItself .examItself__content .questions ul {
+        padding-right: 10px;
+        font-size: 1.1rem;
+    }
+    .examScreen .examItself .examItself__content .questions .comments__container {
+        margin: 15px;
+        border-radius: 5px;
+        min-height: 190px;
+    }
+    .examScreen .examItself .examItself__content .questions .uploadFile {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 30px;
+        /* height: 190px; */
+    }
+
+    .examScreen .examItself .examItself__content .questions .uploadFile label {
+        min-width: 0;
+        min-height: 190px;
+    }
+    .examScreen .examItself .examItself__content .questions .uploadFile > .addimage {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .examScreen .examItself .examItself__content .timer  {
+        padding: 5px 10px;
+    }
+    .examScreen .examItself .examItself__content .timer img {
+        width: 35px;
+    }
+    .examScreen .BtnContainer .startExamBtn {
+        min-width: 200px;
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
+    .examScreen .finishExamBtn  {
+        margin-top: 20px;
+    }
+
+    .examScreen .finishExamBtn > button {
+        min-width: 200px;
+    }
+
+    .examScreen .examItself .examItself__content .questions .comments__container .imageAnswer {
+        height: 120px;
+        max-width: 120px;
+        object-fit: cover;
+        border-radius: 3px;
+        box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    }
+    
+    .examScreen .examItself .examItself__content .questions .comments__container .imageAnswer:hover {
+        box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+    }
+}

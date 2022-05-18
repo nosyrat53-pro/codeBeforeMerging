@@ -1,0 +1,73 @@
+.LeaveComment {
+    padding: 20px 40px;
+}
+
+.LeaveComment__header {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.LeaveComment__header img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.LeaveComment__textField textarea {
+    width: 100%;
+    min-height: 200px;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    transition: all 100ms ease-in;
+}
+
+.LeaveComment__textField textarea:focus {
+    box-shadow: inset 0px 3px 1px -2px rgba(0,0,0,0.2),inset 0px 2px 2px 0px rgba(0,0,0,0.14), inset 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.LeaveComment__sendBtn {
+    text-align: left;
+}
+
+.LeaveComment__sendBtn button {
+    background-color: #038F8B;
+    color: white;
+    padding: 5px 25px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    transition: all 100ms ease-in;
+}
+
+.LeaveComment__sendBtn button:hover {
+    background-color: #057773;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px){
+    .LeaveComment {
+        padding: 10px 20px;
+    }
+    .LeaveComment__header {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .LeaveComment__header img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    .LeaveComment__textField textarea {
+        min-height: 150px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .LeaveComment__sendBtn button {
+        padding: 5px 20px;
+    }
+}

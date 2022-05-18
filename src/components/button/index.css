@@ -1,0 +1,32 @@
+
+
+.subject__subscribeButton {
+    width: 100%;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+.subject__subscribeButton button {
+    background: #5983D8;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    transition: all .1s ease-in;
+    font-weight: 700;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);;
+    transition: all 100ms ease-in;
+}
+
+.subject__subscribeButton button:hover {
+    background: #487be0;
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px){
+    .subject__subscribeButton button {
+        width: 90%;
+    }
+}

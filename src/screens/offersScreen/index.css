@@ -1,0 +1,10 @@
+.offersScreen {
+    padding: 20px 40px;
+}
+
+@media (max-width: 768px){
+    .offersScreen {
+        padding: 10px 20px;
+    }
+    
+}

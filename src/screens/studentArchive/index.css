@@ -1,0 +1,190 @@
+.studenArchiveScreen {
+    padding: 20px 40px;
+}
+.studenArchiveScreen .maintitle {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.studenArchiveScreen .chooseTimeLine .checkboxesContainer {
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+}
+
+.studenArchiveScreen .chooseTimeLine .checkboxesContainer .checkboxCon {
+    min-width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.studenArchiveScreen .chooseTimeLine .checkboxesContainer .checkboxCon input[type="checkbox"]{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    transition: all 100ms ease-in;
+}
+
+.studenArchiveScreen .chooseTimeLine .checkboxesContainer .checkboxCon input[type="checkbox"]:hover{
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    transform: scale(1.1);
+}
+
+.studenArchiveScreen .chooseTimeLine .checkboxesContainer .checkboxCon p {
+    font-weight: 600;
+}
+
+.studenArchiveScreen .choosDateContainer {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.studenArchiveScreen .choosDateContainer .datepicker {
+    display: flex;
+    min-width: 40%;
+    align-items: center;
+ 
+}
+
+.studenArchiveScreen .choosDateContainer .datepicker p{
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.studenArchiveScreen .choosDateContainer .datepicker input{
+    min-width: 200px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.685);
+    padding: 5px 20px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.1),0px 2px 2px 0px rgba(0,0,0,0.12),0px 1px 5px 0px rgba(0,0,0,0.09);
+    transition: all 75ms ease;
+    user-select: none;
+}
+
+.studenArchiveScreen .choosDateContainer .datepicker input:hover{
+   transform: translateY(-1px);
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.1),0px 6px 10px 0px rgba(0,0,0,0.11),0px 1px 18px 0px rgba(0,0,0,0.09);
+
+}
+
+.studenArchiveScreen .infos {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.studenArchiveScreen .circleInfoAll {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #5983d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    transition: all 125ms ease-in;
+}
+
+.studenArchiveScreen  .circleInfo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    transition: all 125ms ease-in;
+}
+
+/* .studenArchiveScreen  .circleInfo:hover ,
+.studenArchiveScreen .circleInfoAll:hover{
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+} */
+
+.studenArchiveScreen  .circleInfo:hover ,
+.studenArchiveScreen .circleInfoAll:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+
+.studenArchiveScreen  .circleInfo img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.studenArchiveScreen  .circleInfo  p {
+    margin: 0;
+}
+
+.yellow {
+    background: #f6b41b;
+}
+
+.purpl {
+    background: #d859be;
+}
+
+@media (max-width: 768px){
+    .studenArchiveScreen {
+        padding: 10px 20px;
+    }
+    .studenArchiveScreen .maintitle {
+        margin-bottom: 25px;
+        font-size: 1rem;
+    }
+    .studenArchiveScreen .infos { 
+        justify-content: center;
+    }
+    .studenArchiveScreen .chooseTimeLine .checkboxesContainer .checkboxCon {
+        min-width: 20%;
+    }
+
+    .studenArchiveScreen .chooseTimeLine .checkboxesContainer .checkboxCon p {
+        font-weight: 500;
+        font-size: .9rem;
+    } 
+    .studenArchiveScreen .choosDateContainer .datepicker input{
+        min-width: 180px;
+        padding: 5px 15px;
+        box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.1),0px 2px 2px 0px rgba(0,0,0,0.12),0px 1px 5px 0px rgba(0,0,0,0.09);
+    }
+    .studenArchiveScreen .choosDateContainer {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .studenArchiveScreen .choosDateContainer .datepicker p {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 520px){
+    .studenArchiveScreen .choosDateContainer .datepicker {
+        justify-content: space-between;
+    }
+}

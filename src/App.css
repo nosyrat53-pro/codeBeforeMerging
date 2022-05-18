@@ -1,0 +1,4 @@
+.app {
+  /*Set the the padding from top to 80px wich is the height of our fixed header  */
+  padding-top: 80px;
+}

@@ -1,0 +1,221 @@
+.profileScreen__content {
+    margin-top: 50px;
+}
+.profileScreen__content .editPasswordBtn button {
+    background: #D859BE;
+    max-width: 200px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.profileScreen__content .topcontent {
+    width: 100%;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profileScreen__content .topcontent .userImage {
+    width: 130px;
+    height: 130px;
+    border: 2px solid #00A5A5;
+    border-radius: 100%;
+    margin: 10px auto;
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+
+.profileScreen__content .topcontent .userName {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.profileScreen__content .bottomContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+.profileScreen__content .bottomContent .leftContent ,
+.profileScreen__content .bottomContent .rightContent {
+    position: relative;
+    border: 1px solid #707070;
+    padding: 20px 40px;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+
+.profileScreen__content .bottomContent .leftContent .title,
+.profileScreen__content .bottomContent .rightContent .title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-50%);
+    background-color: #00A5A5;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    width: 70%;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.profileScreen__content .bottomContent .leftContent ul,
+.profileScreen__content .bottomContent .rightContent ul {
+    list-style-image: url('../../assets/icons/circle.svg');
+    padding: 0;
+}
+
+.profileScreen__content .bottomContent .leftContent ul li ,
+.profileScreen__content .bottomContent .rightContent ul li {
+    margin: 20px 0px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.profileScreen__content .bottomContent .leftContent ul li::after ,
+.profileScreen__content .bottomContent .rightContent ul li::after {
+    content: url('../../assets/icons/circle.svg');
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: -11%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.editpassword {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid #afafaf;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 7px;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.editpassword input{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    transition: all .175s ease-in;
+}
+
+.editpassword input:focus {
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12),
+    inset 0px 2px 1px -1px rgba(0,0,0,0.2),inset 0px 1px 1px 0px rgba(0,0,0,0.14),inset 0px 1px 3px 0px rgba(0,0,0,0.12)
+}
+
+.editpassword .enterOld,
+.editpassword .enterNew,
+.editpassword .confirmNew {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.editpassword .enterOld img,
+.editpassword .enterNew img,
+.editpassword .confirmNew img {
+    width: 20px;
+    height: 20px;
+}
+
+.editpassword .enterOld .text,
+.editpassword .enterNew .text,
+.editpassword .confirmNew .text {
+    margin-bottom: 10px;
+}
+
+.editpassword .btnsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.editpassword .btnsContainer button {
+    border-radius: 5px;
+}
+
+.editpassword .btnsContainer .saveBtn button{
+    background: #388e3c;
+}
+
+@keyframes showbtn {
+    from {
+        opacity: 0;
+        display: none;
+    }
+    to{
+        opacity: 1;
+        display: flex;
+    }
+}
+
+
+@media (max-width: 768px){
+    .profileScreen__content .topcontent .userImage {
+        width: 90px;
+        height: 90px;
+    }
+    .profileScreen__content .bottomContent .leftContent ,
+    .profileScreen__content .bottomContent .rightContent {
+        position: relative;
+        border: 1px solid #707070;
+        padding: 10px 20px;
+        padding-right: 25px;
+        min-width: 230px;
+        margin: 20px auto;
+    }
+
+    .profileScreen__content .bottomContent .leftContent ul li ,
+    .profileScreen__content .bottomContent .rightContent ul li {
+        margin: 15px 0px;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        font-size: .8rem;
+    }
+    .profileScreen__content .bottomContent .leftContent .title,
+    .profileScreen__content .bottomContent .rightContent .title {
+        text-align: center;
+        font-weight: 500;
+        font-size: .75rem;
+    }
+    .profileScreen__content .bottomContent {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7%;
+
+    }
+    .profileScreen__content .bottomContent .leftContent ul li::after, .profileScreen__content .bottomContent .rightContent ul li::after {
+        width: 7px;
+        height: 7px;
+        right: -9%;
+    }
+
+    .editpassword {
+        max-width: 350px;
+    }
+}
+
+@media  (max-width: 576px) {
+    .editpassword {
+        max-width: 280px;
+    }
+}

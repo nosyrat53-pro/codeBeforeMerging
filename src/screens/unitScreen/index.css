@@ -1,0 +1,33 @@
+.unitscreen__inifoAccordion {
+    width: 100%;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.unitscreen__inifoAccordion  .acord{
+    width: 80%;
+    margin: 0px auto;
+    border: none;
+}
+
+.unitscreen__inifoAccordion .acord .accordion-item {
+    border: none;
+}
+
+.unitscreen__inifoAccordion .acord .accordion-header {
+    border-bottom: 1px solid rgba(170, 170, 170, 0.801);
+}
+
+.unitscreen__inifoAccordion .acord .accordion-button::after {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+@media (max-width: 768px){
+    .unitscreen__inifoAccordion  .acord{
+        width: 100%;
+    }
+    .unitscreen__inifoAccordion button{
+        padding: 5px 5px;
+    }
+}

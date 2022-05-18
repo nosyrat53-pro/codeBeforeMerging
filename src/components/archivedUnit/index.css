@@ -1,0 +1,43 @@
+.archivedunits {
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #b8b6b6;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    transition: all 50ms ease-in-out;
+}
+
+.archivedunits:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.archivedunits.archived {
+    border: 4px solid #30e829;
+    color: #30e829;
+    font-weight: 600;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.archivedunits.archived:hover {
+    box-shadow: 0px 2px 1px -1px #30e829,0px 1px 1px 0px #30e829,0px 1px 3px 0px #30e829;
+}
+
+@media (max-width: 768px){
+    .archivedunits {
+        padding: 15px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .archivedunits.archived {
+        border: 3px solid #30e829;
+        color: #30e829;
+        font-weight: 600;
+    }
+}

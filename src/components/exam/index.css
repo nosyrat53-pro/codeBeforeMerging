@@ -1,0 +1,24 @@
+.exam {
+    min-width: 250px;
+    cursor: auto;
+}
+
+.lessonCard.exam .stars {
+    
+}
+
+.lessonCard .stars.top__questions {
+    background-color: #D859BE;
+}
+
+
+.lessonCard.exam .container h5, 
+.lessonCard.exam .container h6 {
+    margin-left: auto;
+}
+
+.lessonCard .container .locked.topQuestionsLocked {
+    background-color: transparent;
+    cursor: auto;
+    z-index: -1;
+}

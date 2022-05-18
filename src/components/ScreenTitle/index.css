@@ -1,0 +1,125 @@
+.pagetitle {
+    min-height: 70px;
+    background-image: linear-gradient(to bottom , #2CABA8 , #1d7472);
+    padding: 10px 25px;
+    color: white;
+    box-shadow:0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.pagetitle.withoutAdditionsTitles {
+    min-height: 0;
+}
+
+.pagetitle.expanded {
+    display: flex;
+    align-items: center;
+}
+
+
+.pagetitle.expanded .date {
+    margin-right: auto;
+    padding: 10px;
+    border: 2px solid rgb(240, 184, 0);
+}
+
+.pagetitle.expanded .date .title {
+    font-size: 1rem;
+}
+
+.pagetitle.expanded .date .title img {
+    width: 20px;
+}
+.pagetitle__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px){
+
+    .pagetitle__title {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    .pagetitle.expanded .pagetitle__title {
+        font-size: 1.1em;
+    }
+    .pagetitle {
+        padding: 10px 5px;
+    }
+    .infos__sector {
+        margin: 0px 8px;
+    }
+    .pagetitle__title img {
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 540px){
+    .pagetitle.expanded .pagetitle__title {
+        font-size: 1em;
+    }
+    .pagetitle.expanded {
+        flex-direction: column;
+    }
+
+    .pagetitle.expanded .wraptitle {
+        margin-left: auto;
+    }
+    .pagetitle.expanded .date {
+        margin-left: auto;
+        margin-right: 0;
+        padding-top: 10px;
+    }
+    .infos__units {
+        font-weight: 500;
+        font-size: .9rem;
+    }
+    .infos__circle {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .infos__sector {
+        margin: 0px 9px;
+    }
+
+    .pagetitle.expanded .pagetitle__infos {
+        margin-bottom: 10px;
+    }
+
+}
+
+.pagetitle__title img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.pagetitle__infos {
+    display: flex;
+}
+
+.infos__units {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.infos__circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(240, 184, 0);
+    display: inline-block;
+    margin: 0px 3px;
+}
+
+.infos__sector {
+    width: 1px;
+    background-color: rgb(240, 184, 0);
+    margin: 0px 18px;
+}

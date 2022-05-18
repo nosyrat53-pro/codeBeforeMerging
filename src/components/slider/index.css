@@ -1,0 +1,79 @@
+.subject__popComments .comments__container {
+    /* margin: 20px 40px; */
+    /* padding: 10px; */
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.subject__popComments .comments__container::-webkit-scrollbar {
+    display: none;
+}
+
+.subject__popComments .comments__arrows  {
+    position: relative;
+    padding: 30px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.subject__popComments .comments__arrows .rightArrow {
+    position: absolute;
+    right: 0px;
+    top: 40%;
+    z-index: 50;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.subject__popComments .comments__arrows .rightArrow  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 150ms ease-in;
+}
+
+.subject__popComments .comments__arrows .rightArrow  img:hover {
+    transform: scale(1.05);
+}
+
+.subject__popComments .comments__arrows .leftArrow {
+    position: absolute;
+    left: 0px;
+    top: 40%;
+    z-index: 50;
+    width: 30px;
+    height: 30px;
+    transform:  rotateZ(180deg) ;
+    cursor: pointer;
+}
+
+.subject__popComments .comments__arrows .leftArrow  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.subject__popComments .comments__arrows .leftArrow img:hover {
+    transform: scale(1.05);
+}
+
+.subject__popComments .comments__arrows > a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px){
+    .subject__popComments .comments__arrows  {
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+}

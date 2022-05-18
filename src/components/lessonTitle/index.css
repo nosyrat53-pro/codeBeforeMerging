@@ -1,0 +1,75 @@
+
+.programe__examTitle {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.863);
+    backdrop-filter: blur(3px);
+}
+
+.programe__examTitle .firstTitle {
+    display: flex;
+    align-items: center;
+}
+
+.programe__examTitle .firstTitle img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.programe__examTitle .firstTitle .title {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.programe__examTitle .secondTitle {
+    display: flex;
+    align-items: center;
+}
+
+.programe__examTitle .secondTitle img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.programe__examTitle .secondTitle .averageBtn button{
+    background: #D859BE;
+    color: white;
+    width: fit-content;
+    border-radius: 7px;
+}
+
+.programe__examTitle .secondTitle .averageBtn button.subject__subscribeButton {
+    padding: 10px;
+}
+
+.programe__examTitle .secondTitle .averageBtn button:hover {
+    transform: translateY(0px);
+}
+
+@media (max-width: 768px){
+    .programe__examTitle {
+        padding: 10px 20px;
+    }
+    .programe__examTitle .firstTitle img {
+        width: 20px;
+        height: 20px;
+    }
+    .programe__examTitle .firstTitle .title{
+        font-size: .9rem;
+        width: 100%;
+
+    }
+    .programe__examTitle .secondTitle {
+        margin-top: 20px;
+    }
+    .programe__examTitle .secondTitle img {
+        width: 30px;
+        margin-left: 10px;
+    }
+    .programe__examTitle .secondTitle .averageBtn button {
+        font-size: .78rem;
+        padding: 6px;
+    }
+}

@@ -1,0 +1,201 @@
+.whatUWlearn {
+    padding: 20px 40px;
+}
+
+.whatUWlearn .imageCon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.whatUWlearn .imageCon img {
+    width: 75%;
+    /* min-height: 450px; */
+    object-fit: cover;
+    margin: 0px auto;
+}
+
+.whatUWlearn .content h2{
+    margin-bottom: 15px;
+}
+
+.whatUWlearn .content ul {
+    list-style-image: url('../../assets/icons/circle.svg');
+    margin: 0;
+    padding: 0;
+}
+
+.whatUWlearn .content ul li {
+    margin: 10px 0px;
+}
+
+.imageGallary {
+    padding: 20px 40px;
+}
+
+.imageGallary > .title ,
+.paperAttach > .title  {
+    border-top: 2px solid #6a59ffaf;
+    border-bottom: 2px solid #6a59ffaf;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: fit-content;
+    font-size: 1.2rem !important;
+}
+
+.imageGallary .slider .carousel {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.carousel .descImage{
+    background: rgba(0, 0, 0, 0.733);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.lessonScreen .carousel .carousel-control-next-icon {
+    background-image: url('../../assets/icons/svgarrow.svg');
+    transform: rotate(180deg);
+}
+
+.lessonScreen .carousel .carousel-control-prev-icon {
+    background-image: url('../../assets/icons/svgarrow.svg');
+}
+
+.paperAttach {
+    padding: 20px 40px;
+}
+
+.lesson__questions {
+    padding: 20px 40px;
+}
+
+.lesson__questions .questions__container {
+    margin: 0;
+    padding: 0;
+    list-style: linear-gradient();
+}
+
+/* style the finish btn */
+.lessonsSecreen__FinishExamBtn {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.lessonsSecreen__FinishExamBtn button {
+    width: 50% !important;
+}
+
+.examResultBtn button{
+    width: 50%;
+    background-color: #D859BE;
+}
+
+.examResultBtn button:hover {
+    background-color: #db35ba;
+}
+
+.repeatedQuestions {
+    padding: 20px 40px;
+}
+
+.repeatedQuestions ul {
+    list-style-image: url('../../assets/icons/circle.svg');
+    padding: 0px;
+}
+
+.repeatedQuestions ul li{
+    padding: 10px 0px;
+    border-top: 1px / #a1a1a1 !important;
+}
+
+.repeatedQuestions .ques {
+    border-top: 1px solid #a1a1a1b5;
+    border-bottom: 1px solid #a1a1a1;
+    padding: 10px;
+
+}
+
+.repeatedQuestions .explan {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #EEEDED;
+    /* border-bottom: 1px solid #a1a1a1; */
+    padding: 10px;
+}
+
+.buttonsContianer {
+    width: 100%;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.buttonsContianer button {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    color: white;
+    font-weight: 600;
+    margin: 0px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.buttonsContianer .finshLesson {
+    background: #5983D8;
+    
+}
+.buttonsContianer .finshLesson:hover {
+    background: #3b6fd8;
+    transform: translateY(-1px);
+}
+
+.buttonsContianer .goBackWard {
+    background-color: #D859BE;
+}
+
+.buttonsContianer .goBackWard:hover {
+    background-color: #db37ba;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px){
+    .repeatedQuestions {
+        padding: 10px 25px;
+    }
+    .lessonsSecreen__FinishExamBtn button {
+        width: 70% !important;
+    }
+    .whatUWlearn {
+        padding: 10px 20px;
+    }
+
+    .whatUWlearn .content h2{
+        font-size: 1.2rem;
+    }
+    .whatUWlearn .content ul li {
+        font-size: .9rem;
+    }
+    .imageGallary ,
+    .paperAttach {
+        padding: 10px 20px;
+    }
+    .imageGallary > .title ,
+    .paperAttach > .title  {
+        border-top: 1px solid #6a59ffaf;
+        border-bottom: 1px solid #6a59ffaf;
+        padding: 3px;
+        margin-bottom: 10px;
+        font-size: 1rem !important;
+    }
+    .imageGallary > .title h4,
+    .paperAttach > .title  h4{
+        font-size: 1rem !important;
+    }
+
+    .lesson__questions {
+        padding: 10px 25px;
+    }
+    
+}

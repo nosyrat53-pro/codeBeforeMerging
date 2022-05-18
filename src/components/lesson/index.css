@@ -1,0 +1,119 @@
+
+.lessonCard {
+    max-width: 240px;
+    max-height: 300px;
+    background-color: #FDFDFD;
+    border: 1px solid #a2a2a2;
+    border-radius: 12px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),
+                0px 2px 2px 0px rgba(0,0,0,0.44),
+                0px 1px 5px 0px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 100ms ;
+}
+
+.lessonCard:hover {
+    box-shadow: 0px 3px 5px -1px #03797510,0px 5px 8px 0px #03797511,0px 1px 14px 0px #03797522;
+    background-color: rgba(0,0,0,0.1);
+    transform: scale(.99);
+}
+.lessonCard .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lessonCard .container .date {
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.788)
+}
+
+.lessonCard .container .centerimg {
+    max-width: 90px;
+    margin-top: 20%;
+    margin-bottom: 5px;
+}
+
+.infos__circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(240, 184, 0);
+    display: inline-block;
+    margin: 0px 3px;
+}
+
+.lessonCard .container .lesson__button {
+    color: white;
+    background: #037975;
+    padding: 5px 10px;
+    border: none;
+    width: 80%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.lessonCard .container .lesson__button:hover {
+    background: #037975cb;
+}
+
+.lessonCard  .stars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 100px;
+    height: 23%;
+    width: 23%;
+    background-color: #037975;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+.lessonCard .stars img {
+    width: 17px;
+    height: 17px;
+}
+
+.locked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #E4E4E466;
+    cursor: not-allowed;
+}
+
+.container .locking {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (max-width: 768px){
+    /* .lessonCard {
+        max-width: 240px;
+        max-height: 300px;
+        width: 130px;
+        height: 150px;
+        /* cursor: pointer; 
+        font-size: 60%;
+    }
+    .lessonCard .container .centerimg {
+        max-width: 30px;
+        margin-top: 4%;
+        margin-bottom: 0px;
+    } */
+}

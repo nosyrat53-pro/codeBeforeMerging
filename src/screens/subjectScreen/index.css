@@ -1,0 +1,282 @@
+.subjectScreenn {
+
+}
+
+.subject__videoScection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 40px;
+}
+
+.subject__videoScection__explanation,
+.subject__videoScection__video {
+   width: 50%;
+}
+
+.subject__videoScection__explanation {
+    padding-left: 20px;
+}
+
+.subject__videoScection__explanation h1 {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem;
+}
+.subject__videoScection__explanation h1 img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.subject__videoScection__video {
+    text-align: left;
+}
+
+.subject__videoScection__video video,
+.subject__videoScection__video img {
+    max-width: 420px;
+    max-height: 420px;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+}
+
+.subject__videoScection__video img  {
+    object-fit: contain;
+}
+
+
+/* Subject section */
+.subject__section {
+    width: 100%;
+}
+
+.subject__section .subject__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.subject__section .subject__content ul{
+    list-style-type: disc;
+    list-style-image: image(yellow);
+    width: 50%;
+    padding: 0px;
+}
+
+.subject__section .subject__content ul li {
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.subject__section .subject__content img {
+    width: 45%;
+    object-fit: contain;
+    max-width: 420px;
+    max-height: 420px;
+}
+.subject__openLessons .lessons__container {
+    padding: 20px 40px; 
+}
+
+.lessons__container .lesson {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #aaa;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.lessons__container .lesson img {
+    max-width: 200px;
+    margin-left: 20px;
+}
+
+.lessons__container .lesson .lesson__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.lessons__container .lesson .lesson__details h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.lessons__container .lesson .lesson__details .lesson__teacherTime {
+    margin-bottom: 10px;
+}
+
+.lessons__container .lesson .lesson__details .lesson__infos {
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* subject units */
+.units__container {
+    padding: 20px 40px;
+}
+
+.units__container  .accordion-button {
+    background-color: #BDBABA;
+    color: white
+}
+.units__container  .accordion-button:not(.collapsed) {
+    background-color: #11AEA2;
+    color: white;
+}
+
+.units__container  .accordion-button::after {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+.units__container .accordion-button > img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+.units__container .accordion-button .time {
+    margin-right: auto;
+}
+
+.accordion-body ul {
+    list-style-type: none;
+}
+
+.accordion-body ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px){
+    .subject__videoScection {
+        flex-direction: column;   
+    }
+    .subject__videoScection {
+        padding: 15px 20px;
+    }
+    .subject__videoScection__explanation,
+    .subject__videoScection__video {
+        width: 100%;
+    }
+
+    .subject__videoScection__explanation {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+    .subject__videoScection__explanation h1 img {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+    
+    .subject__videoScection__video {
+        text-align: center;
+    }
+    .subject__videoScection {
+        padding-bottom: 0px;
+    }
+
+    .subject__videoScection__explanation h1 {
+        font-size: 1.2rem;
+    }
+
+    .subject__contactTeacher .contactBtn {
+        width: 70%;
+        margin-right: 10px;
+        padding: 0px 20px;
+        border-radius: 20px;
+
+    }
+    .subject__contactTeacher .contactShape {
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+        padding-top: 4px;
+        padding-right: 8px;
+        margin-right: 0px;
+    }
+    .subject__contactTeacher .contactShape  .line {
+        width: 15px;
+        height:2px;
+        margin: 4px auto;
+        background-color: white;
+    }
+    .subject__section .subject__content {
+        padding: 10px 20px;
+    }
+    .subject__section .subject__content ul{
+        list-style-type: disc;
+        width: 100%;
+    }
+
+    .subject__section .subject__content img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .subject__section .subject__content ul li {
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+    .lessons__container .lesson img {
+        max-width: 90px;
+        height: 90px;
+        margin-left: 10px;
+    } 
+
+    .subject__openLessons .lessons__container {
+        padding: 10px 20px; 
+    }
+    
+    .lessons__container .lesson {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #aaa !important;
+        margin-top: 10px;
+    }
+    .lessons__container .lesson .lesson__details h3 {
+        font-weight: 600;
+    }
+    
+    .lessons__container .lesson .lesson__details .lesson__teacherTime {
+        margin-bottom: 5px;
+        font-size: .9rem;
+    }
+    
+    .lessons__container .lesson .lesson__details .lesson__infos {
+        width: 200px;
+        font-size: .9rem;
+    }
+
+    .units__container  .accordion-button {
+        font-size: .9rem;
+    }
+
+    .units__container .accordion-button > img {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+    }
+
+
+
+
+}

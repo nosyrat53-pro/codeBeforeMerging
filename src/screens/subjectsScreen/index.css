@@ -1,0 +1,31 @@
+.archivedUnitsContainer {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.subjectsScreen .Subjects__Title {
+    margin: 20px 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 1.35rem;
+}
+
+@media (max-width: 768px){
+    .archivedUnitsContainer {
+        padding: 10px 20px;
+        gap: 15px;
+    }
+    
+    .subjectsScreen .Subjects__Title {
+        margin: 10px 20px;
+        font-size: 1.1rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+}

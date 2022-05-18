@@ -1,0 +1,306 @@
+.wallenScreen {
+
+}
+
+.walletContent {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.walletContent .title {
+    background-color: #037A79;
+    width: fit-content;
+    min-width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.walletContent .right {
+    width: 90%;
+}
+
+.walletContent .right .description {
+    margin-left: 10px;
+}
+
+.walletContent .left {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #707070;
+    padding: 5%;
+    text-align: center;
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+    max-height: 400px;
+    cursor: pointer;
+    transition: all 175ms ease-in-out;
+}
+
+.walletContent .left:hover {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+    transform: translateY(-3px);
+}
+
+.walletContent .left img {
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.walletContent .left h3 {
+    font-size: 1.2rem;
+}
+
+.walletScreen .buttonsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+
+
+.walletScreen .buttonsContainer .sendBtn  {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #038F8B;
+    min-height: 35px;
+    min-width: 140px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    margin: 0 20px;
+}
+
+.walletScreen .buttonsContainer .chargeBtn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #D859BE ;
+    min-height: 35px;
+    min-width: 140px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    margin: 0 20px;
+}
+
+/* #D859BE */
+
+
+
+.modalContent .top{
+    text-align: center;
+}
+
+.modalContent .top img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.modalContent .middle{
+    width: 100%;
+    /* text-align: right; */
+}
+
+.modalContent .middle .field {
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: right; */
+}
+
+.modalContent .middle .field input {
+    margin-left: 10%;
+    width: 180px;
+}
+
+.modalContent .middle .field img {
+    width: 25px;
+    margin-left: 10px;
+    pointer-events: none;
+}
+
+.modalContent .bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.modalContent .bottom .sendBtn {
+    background-color: #00A5A5;
+    color: white;
+    min-width: 80px;
+    outline: none;
+    border: none;
+    width: 50%;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    padding: 6px 12px;
+    transition: all 150ms ease-in;
+    border-radius: 5px;
+}
+
+.modalContent .bottom .sendBtn:hover {
+    transform: translateY(-1px);
+    background-color: #007a7a;
+}
+
+/* Step one modal */
+.modalstep1ontent .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+.modalstep1ontent .top .stepImage{
+    width: 20%;
+    min-height: 100px;
+    border-radius: 10px;
+    border: 1px solid #a2a2a2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.modalstep1ontent .top .stepImage.active {
+    border: 3px solid #098B82;
+}
+
+.modalstep1ontent .top .stepImage img {
+    max-width: 50px;
+}
+
+.modalstep1ontent .uploadFile {
+    position: relative;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.modalstep1ontent .uploadFile label {
+    position: relative;
+    cursor: auto;
+    height: 100px;
+    align-items: center;
+    min-width: 0;
+    border: solid 1px #707070;
+    border-radius: 5px;
+    width: 180px;
+    overflow: hidden;
+}
+
+.modalstep1ontent .uploadFile label * {
+    color: transparent;
+    fill: transparent;
+}
+
+.modalstep1ontent .uploadFile .addimage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0px !important;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.modalstep1ontent .uploadFile .selectedImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+    object-fit: contain;
+}
+
+@media (max-width: 768px){
+    .walletContent {
+        margin-top: 100px;
+        padding: 10px 20px;
+        display: block;
+    }
+    .walletContent .right {
+        width: 100%;
+    }
+    .walletContent .left{
+        text-align: center;
+        width: 100%;
+    }
+    .walletContent .left img {
+        max-width: 140px;
+        margin-bottom: 0px;
+        margin: 0px auto;
+    }
+    .walletScreen .buttonsContainer {
+        margin-top: 25px;
+    }
+    .walletScreen .buttonsContainer .chargeBtn ,
+    .walletScreen .buttonsContainer .sendBtn {
+        min-width: 0;
+    }
+
+    .modal {
+        top: 10%;
+    }
+
+    .modalContent .middle .field {
+        /* width: 0%; */
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .modalContent .middle .field p{
+        margin-bottom: 0px;
+    }
+
+    .modalContent .middle .field > div {
+        display: flex;
+        margin-left: auto;
+    }
+    .modalContent .middle .field img {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .modal.show .modal-dialog {
+    }
+    .modalContent .middle .field input {
+        width: 162px;
+        margin: 0 auto;
+    }
+
+    .modalstep1ontent .top .stepImage img {
+        max-width: 30px;
+        margin: 0 auto;
+    }
+
+    .modalstep1ontent .top .stepImage {
+        width: 20%;
+        min-height: 70px;
+    }
+
+    .modalContent .middle .field > div {
+        margin-left: 0;
+    }
+    .modalstep1ontent .uploadFile {
+        position: relative;
+        margin-left: 0%;
+    }
+    .walletContent .right .description {
+        margin-bottom: 20px;
+    }
+}

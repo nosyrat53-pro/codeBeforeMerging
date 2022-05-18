@@ -1,0 +1,194 @@
+.table {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+    margin: 0px auto;
+    max-width: 1100px;
+    margin-bottom: 40px;
+}
+
+.table table {
+    width: 100%;
+}
+
+.table .leftContent {
+    background: #5983D8;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.table .rightContent {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.table .rightContent .times{
+    background: #5983D8;
+    text-align: center;
+    margin-top: 10px;
+    width: 35px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.table .rightContent .times .text{
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+.table .table>:not(:first-child) {
+    border-top: none;
+}
+
+.table table thead th:not(:first-child){
+    border: 1px solid #707070;
+}
+
+.table table tr > td{
+    border: .5px solid #a1a1a1;
+    /* display: inline-block; */
+    min-width: 100px;
+    min-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table table tr > td.thead {
+    min-height: 30px;
+    font-weight: 600;
+    height: 30px;
+}
+
+.table table tr > td.thead:first-child {
+    visibility: hidden;
+    min-width: 40px;
+    min-height: 30px;
+    border: none;
+}
+
+.table table tr > td.day{
+    min-width: 45px;
+    min-height: 100px;
+    font-size: .85rem;
+    text-align: center;
+    font-weight: 600;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.table table tr td.centering {
+    display: flex;
+    align-items: center;
+}
+
+.table table tr td .content {
+    height: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.table table tr td .content button {
+    background-color: #BF4DF8;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    transition: all 140ms ease;
+}
+
+.table table tr td .content button:hover{
+    transform: translateY(-1px);
+}
+
+.table>:not(:first-child) {
+    border-top: 0px;
+}
+
+.tempTextField {
+    max-width: 100%;
+    border: none;
+    min-height: 100px;
+    text-align: right;
+    direction: rtl;
+    resize: none;
+    outline: none;
+}
+
+@media (max-width: 768px){
+    .table {
+        padding: 10px 20px;
+    }
+    .table table tr > td{
+        min-width: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .table table tr > td.thead {
+        font-size: .7rem;
+        font-weight: 500;
+    }
+    .table table tr > td.day{
+        min-width: 30px;
+        min-height: 100px;
+        font-size: .7rem;
+        text-align: center;
+        font-weight: 500;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+    
+    .table table tr td .content {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .7rem;
+        font-weight: 500;
+    }
+    .table .leftContent {
+        font-size: .8rem;
+        font-weight: 600;
+        padding:3px;
+    }
+    .table .rightContent .times {
+        width: 30px;
+        font-size: .8rem;
+    }
+}
+
+
+
+/* Styling Exam table */
+
+.table table tr.exam td.examDay {
+    background-color: #00A5A5;
+    color: white;
+}
+
+.table table tr.exam td.examThead {
+    background-color: #00A5A5;
+    color: white;
+    height: 50px;
+}
+
+@media (max-width: 576px){
+    .table table tr td .content {
+        font-size: .65rem;
+    }
+}
